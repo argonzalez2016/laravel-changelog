@@ -23,7 +23,7 @@ trait CanSortReleases
                     return 1;
                 }
 
-                return version_compare($first, $second);
+                return -version_compare($first, $second);
             });
         }
 
